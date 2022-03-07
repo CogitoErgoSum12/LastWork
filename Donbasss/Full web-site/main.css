@@ -6,7 +6,7 @@ html{
 
 body{
     height: 100%;
-    background-color: white;
+    background-color: #dfdfdf;
 }
 
 header{
@@ -58,6 +58,9 @@ header{
     font-family: Yu Gothic 11px;
 
 
+}
+.slider{
+    margin-top: 5%;
 }
 .fa-search::before{
     color: #EEEEEE;
