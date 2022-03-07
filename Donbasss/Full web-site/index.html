@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="body">
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
@@ -61,7 +61,7 @@
     <div class="info-block container" id="info-block">
         <div class="vertical-bar" id="vert-bar">
             <ul id="myMenu">
-                <li><a class="lis" href="index.html">Главная</a></li>
+                <li><a class="lis" href="index.html" >Главная</a></li>
                 <li><a class="lis" href="pages/catalog/catalog.html">Каталог</a></li>
                 <li><a class="lis" onclick="turnAudio()" id="downBtn">Помощь</a></li>
             </ul>
@@ -78,7 +78,8 @@
 
                     </div>
                     <div class="slider container">
-                                <div class = "row container">
+                        <p style="color: #f1f1f1" class="slider__text"><strong>Каталог фильмов </strong></p>
+                                <div class = "row ">
                                     <div class="col-md-12">
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-indicators">
@@ -121,7 +122,7 @@
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page2.html" class="img-area">
                                                                     <img src="./assets/Blade.jpg" alt="">
                                                                 </a>
 
@@ -129,7 +130,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page3.html" class="img-area">
                                                                     <img src="./assets/StalkerFullHd.jpg" alt="">
                                                                 </a>
 
@@ -137,7 +138,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page.html" class="img-area">
                                                                     <img src="./assets/OldBoy.png" alt="">
                                                                 </a>
 
@@ -149,7 +150,7 @@
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page2.html" class="img-area">
                                                                     <img src="./assets/Blade.jpg" alt="">
                                                                 </a>
 
@@ -157,7 +158,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page3.html" class="img-area">
                                                                     <img src="./assets/StalkerFullHd.jpg" alt="">
                                                                 </a>
 
@@ -165,7 +166,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="single-box">
-                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                <a href="Page.html" class="img-area">
                                                                     <img src="./assets/OldBoy.png" alt="">
                                                                 </a>
 
@@ -187,15 +188,17 @@
                                         </div>
                                     </div>
                                 </div>
-                        </div>
-                <p class="navigation-text container" id="nav-text">Обновления на сайте ></p>
-                    <div class="news-list">
-
-                        <ul id="update-block__films" class="container">
-                            <p class="loading">Загружаем список фильмов...</p>
-                        </ul>
                     </div>
+                        <div class="news-list-box">
+                            <p class="navigation-text container" style="color: #f1f1f1" ><strong>Обновления на сайте </strong></p>
+                            <div class="news-list">
 
+                                <ul id="update-block__films" class="container">
+                                    <p class="loading">Загружаем список фильмов...</p>
+                                </ul>
+                            </div>
+                        </div>
+                    <br>
             </div>
         </div>
     </div>

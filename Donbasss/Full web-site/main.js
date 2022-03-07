@@ -88,18 +88,21 @@ logusername.oninput = function() {
 
 
 function darkmode() {
-  var element = document.body;
-  var elementt = document.getElementById("info-block");
-  var elementtt = document.getElementById("vert-bar");
-  var elementttt = document.getElementById("all-info");
-  var elements = document.getElementsByTagName("a");
-  var elementa = document.getElementById("nav-text");
+  let element = document.body;
+  //element = document.getElementsByTagName("body")
+  let element__info_block = document.getElementById("info-block");
+  let element__vert_bar = document.getElementById("vert-bar");
+  let element__all_info = document.getElementById("all-info");
+  let elements_a = document.getElementsByTagName("a");
+  let element__nav_text = document.getElementById("nav-text");
+  let element_vertical_bar__text = document.getElementById("vertical-bar__text")
   element.classList.toggle("dark-mode");
-  elementt.classList.toggle("dark-mode1");
-  elementtt.classList.toggle("dark-mode2");
-  elementttt.classList.toggle("dark-mode3");
-  elements.classList.toggle("dark-mode4");
-  elementa.classList.toggle("dark-mode5");
+  element__info_block.classList.toggle("dark-mode1");
+  element__vert_bar.classList.toggle("dark-mode2");
+  element__all_info.classList.toggle("dark-mode3");
+  elements_a.classList.toggle("dark-mode4");
+  element__nav_text.classList.toggle("dark-mode5");
+  element_vertical_bar__text.classList.toggle("dark-mode_lis");
 }
 
 

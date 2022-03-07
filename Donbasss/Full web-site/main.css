@@ -2,17 +2,13 @@ html{
     font-size: 16px;
     font-family: Yu Gothic;
     height: 100%;
-}
 
-body{
-    height: 100%;
+}
+.body{
     background-color: #dfdfdf;
+    height: 100%;
 }
 
-header{
-    /*background-color: #222222;*/
-    /*height: 10%;*/
-}
 .navbar{
     display: flex;
     position: fixed;
@@ -55,12 +51,21 @@ header{
     text-align: center;
     color: #f1f1f1;
     font-size: 11px;
-    font-family: Yu Gothic 11px;
-
+    font-family: Yu Gothic;
 
 }
 .slider{
     margin-top: 5%;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+
+}
+.slider__text{
+    font-size: 23px;
+    padding-top: 15px;
+}
+.row{
+    padding-bottom: 15px;
 }
 .fa-search::before{
     color: #EEEEEE;
@@ -115,6 +120,7 @@ li {
     margin-top: 5%;
     color: #000000;
     font-size: 21px;
+    padding-top: 15px;
 
 }
 .news-list {
@@ -123,8 +129,9 @@ li {
     display: flex;
     margin-bottom: 2%;
     padding: 0;
-    border-radius: 8px;
+
     background-color: #0c0c0c;
+
 
 }
 
@@ -236,14 +243,12 @@ section{
     gap: 8px;
     padding-top: 16px;
     justify-content: space-between;
-    background-color: #dfdfdf;
+    font-size: 16px;
+    border: #f1f1f1 outset 1px;
+    background-color: white;
 }
-.vertical-bar {
-    background-color: #dfdfdf;
-}
-.all-info {
-    background-color: #dfdfdf;
-}
+
+
 /* Style the search box */
 #mySearch {
     width: 100%;
@@ -270,18 +275,11 @@ section{
 #myMenu li a:hover {
     background-color: #565656;
 }
-.info-block{
-    background-color: #dfdfdf;
-    font-size: 16px;
-    border: #f1f1f1 outset 1px;
-}
-.vertical-bar {
-    background-color: #dfdfdf;
-}
-.all-info {
-    background-color: #dfdfdf;
-}
+
+
+
 .vertical-bar{
+    background-color: white;
     width: 15%;
     border-right: #f1f1f1 outset 1px ;
 }
@@ -395,15 +393,17 @@ section{
 .dark-mode {
     background-color: #423F3E;
     color: white;
+
 }
 .dark-mode1 {
+    /*info block*/
     background-color: #2B2B2B;
-    border: #121212 outset 1px;
+    border: #0c0c0c outset 1px;
     color: white;
 }
 .dark-mode2 {
     background-color: #2B2B2B;
-    border-right: #121212 outset 1px;
+    border-right: #0c0c0c outset 1px;
     color: white;
 }
 .dark-mode3 {
@@ -423,4 +423,12 @@ section{
 }
 .dark-mode5 {
     color: white;
+}
+.dark-mode_lis{
+    color: white;
+}
+.news-list-box{
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    padding-bottom: 0.333px;
 }
