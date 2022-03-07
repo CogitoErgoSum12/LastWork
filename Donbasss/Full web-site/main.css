@@ -233,12 +233,13 @@ section{
     gap: 8px;
     padding-top: 16px;
     justify-content: space-between;
+    background-color: #dfdfdf;
 }
 .vertical-bar {
-    background-color: white;
+    background-color: #dfdfdf;
 }
 .all-info {
-    background-color: white;
+    background-color: #dfdfdf;
 }
 /* Style the search box */
 #mySearch {
@@ -267,15 +268,15 @@ section{
     background-color: #565656;
 }
 .info-block{
-    background-color: white;
+    background-color: #dfdfdf;
     font-size: 16px;
     border: #f1f1f1 outset 1px;
 }
 .vertical-bar {
-    background-color: white;
+    background-color: #dfdfdf;
 }
 .all-info {
-    background-color: white;
+    background-color: #dfdfdf;
 }
 .vertical-bar{
     width: 15%;
