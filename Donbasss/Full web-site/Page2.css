@@ -6,6 +6,7 @@ html{
 
 body{
     height: 100%;
+    background-color: #f1f1f1;
 }
 .top{
     background-image: url("./assets/lake.png");
@@ -587,4 +588,98 @@ font-size: 1.8rem;
 .size {
   padding-left: 100px;
   padding-right: 100px;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 42.5%;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+#log-username {
+    width: 350px;
+}
+#log-password {
+    width: 350px;
+}
+.reg {
+    color: #EEEEEE;
+    font-size: 30px;
+}
+.form-floating {
+    width: 12px;
+}
+.form-control {
+    width: 30%;
+}
+#reg-head {
+    color: #EEEEEE;
+    margin-left: 6.5%;
+}
+.overlay-container {
+    color: grey;
+}
+.dark-mode {
+    background-color: #423F3E;
+    color: white;
+}
+.dark-mode1 {
+    background-color: #2B2B2B;
+    border: #121212 outset 1px;
+    color: white;
+}
+.dark-mode2 {
+    background-color: #2B2B2B;
+    border-right: #121212 outset 1px;
+    color: white;
+}
+.dark-mode3 {
+    background-color: #2B2B2B;
+    color: white;
+}
+.dark-mode4 {
+    color:white;
+}
+.btn-light {
+    background-color: black;
+    margin-right: 15px;
+}
+.lis {
+    font-weight: bold;
+    font-size: large;
+}
+.dark-mode5 {
+    color: white;
 }

@@ -7,28 +7,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body style="background-color: #f1f1f1">
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"  > <img src="assets/Logo.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="catalog__search">
-                                <p class="fa fa-search catalog__search-icon"></p>
-                                <input type="text" class="form-control form-input catalog__search-input" placeholder="Найти...">
-                            </li>
-                        </ul>
-                    </div>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"  > <img src="assets/Logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="catalog__search">
+                            <p class="fa fa-search catalog__search-icon"></p>
+                            <input type="text" class="form-control form-input catalog__search-input" placeholder="Найти...">
+                        </li>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <div class = "box">
+                                    <h1 id="reg-head">Вход</h1>
+                                    <form>
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" id="log-username" placeholder="логин">
+                                            <label for="">логин</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="log-password" placeholder="пароль">
+                                            <label for="">пароль</label>
+                                        </div>
+                                        <a href="pages/Registration/Registration.html" id="reg-link" style="margin-left: 3%"> регистрация </a>
+                                        <div class = "reg">
+                                            <input type = "button" onClick="login()" id = "log-btn" style="margin-left: 6%" Value = "войти"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <button type="button" class="btn btn-light" onclick="darkmode()">Темная тема</button>
+                        </li>
+                        <li>
+                            <button id="overlay-btn" type="button" onclick="openNav()" class="btn btn-dark">Войти</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
 
 
