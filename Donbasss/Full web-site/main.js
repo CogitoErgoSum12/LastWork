@@ -22,6 +22,9 @@ $(document).ready(function(){
   $("#topBtn").click(function(){
     $('html ,body').animate({scrollTop : 0},0);
   });
+  $("#downBtn").click(function(){
+    $('html ,body').animate({scrollTop : 1000},0);
+  });
   renderUpdateBlock();
 });
 
@@ -83,6 +86,7 @@ logusername.oninput = function() {
   }
 }
 
+
 function darkmode() {
   var element = document.body;
   var elementt = document.getElementById("info-block");
@@ -99,6 +103,11 @@ function darkmode() {
 }
 
 
+let audio = new Audio("clickUp.mp3");
 
+audio.oncanplaythrough = turnAudio();
+function turnAudio(){
+  audio.play();
+}
 
 

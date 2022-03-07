@@ -63,7 +63,7 @@
             <ul id="myMenu">
                 <li><a class="lis" href="index.html">Главная</a></li>
                 <li><a class="lis" href="pages/catalog/catalog.html">Каталог</a></li>
-                <li><a class="lis" href="#">Помощь</a></li>
+                <li><a class="lis" onclick="turnAudio()" id="downBtn">Помощь</a></li>
             </ul>
         </div>
         <div class="all-info" id="all-info">
@@ -204,216 +204,9 @@
         </div>
     </div>
 
-    <!--<div class="container">
-        <div class="backtop">
-            <div class = "row">
-                <div class="col-md-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" class="button" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  class="button" aria-label="Slide 3"></button>
-                        </div>
-
-                         <div class="carousel-inner">
-                             <h2 class="NameText">ТОП ЛУЧШИХ</h2>
-                             <div class="carousel-item active">
-                                 <div class="row">
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/Blade.jpg" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Blade Runner: 2049</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/Clockwork.jpg" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Clockwork orange</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/OldBoy.png" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Oldboy</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="carousel-item">
-                                 <div class="row">
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/Blade.jpg" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Blade Runner: 2049</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/Clockwork.jpg" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Clockwork orange</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-4">
-                                         <div class="single-box">
-                                             <div class="img-area">
-                                                 <img src="./assets/OldBoy.png" alt="">
-                                             </div>
-                                             <div class="img-text">
-                                                 <h2>Oldboy</h2>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" class="button_right" ></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"  >
-                            <span class="carousel-control-next-icon" aria-hidden="true" class="button_left"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="backtop.">
-
-            <ul class="news-list">
-                <h4 class="ListText">Последнее обновление на сайте</h4>
-                <li class="news-list__item ">
-                    <span class="new__date"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Stalker.jpg" class="update_img" alt="movie cover" loading="lazy">
-                        <h4 class="new__title">
-                            Сталкер (1979)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                Мистическое путешествие через Зону к комнате, где исполняются желания. Философский шедевр Андрея Тарковского
-                            </span>
-                        </div>
-                    </div>
-                </li>
-                <li class="news-list__item ">
-                    <span class="new__date" ><script src="main.js"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Solaris.jpg" class="update_img" alt="movie cover" loading="lazy">
-                        <h4 class="new__title">
-                            Солярис (1972)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                На космической станции Крис встречает призрак умершей жены. Шедевр Тарковского об искушении и о сути любви
-                            </span>
-                        </div>
-                    </div>
-                </li>
-                <li class="news-list__item ">
-                    <span class="new__date"><script src="main.js"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Rublev.jpg" class="update_img" alt="movie cover" loading="lazy">
-                        <h4 class="new__title">
-                            Андрей Рублев (1966)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                У иконописца экзистенциальный кризис, и он больше не может творить. Андрей Тарковский — о совести и выборе
-                            </span>
-                        </div>
-                    </div>
-                </li>
-                <li class="news-list__item ">
-                    <span class="new__date"><script src="main.js"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Odissey.jpg" class="update_img" alt="movie cover">
-                        <h4 class="new__title">
-                            2001 год: Космическая одиссея (1968)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                Человек, компьютер и внеземной разум ведут опасный диалог. Грандиозная космическая притча Стэнли Кубрика
-                            </span>
-                        </div>
-                    </div>
-                </li>
-                <li class="news-list__item ">
-                    <span class="new__date"><script src="main.js"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Watchmen.jpg" class="update_img" alt="movie cover">
-                        <h4 class="new__title">
-                            Хранители (2009)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                "Супергерои" распутывают заговор, пока тикают часы Судного дня. Блестящая адаптация знакового комикса Алана Мура
-                            </span>
-                        </div>
-                    </div>
-                </li>
-                <li class="news-list__item ">
-                    <span class="new__date"><script src="main.js"></script></span>
-                    <div class="new__info">
-                        <img src="./assets/Memory.jpg" class="update_img" alt="movie cover">
-                        <h4 class="new__title">
-                            Воспоминания об убийстве (2003)
-                        </h4>
-                        <div class="new__description">
-                            <span>
-                                В корейском городке ищут серийного убийцу. Триллер режиссера «Паразитов», основанный на реальных событиях
-                            </span>
-                        </div>
-                    </div>
-                </li>
 
 
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="container">
-        <div class="backtop">
-            <div class="ListText"> <h3> Видео-обзоры </h3> </div>
-
-            <video src="assets/Tarkov.mp4" controls class="video"></video>
-
-        </div>
-    </div>
-
-    -->
-
-
-    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    <button id="topBtn" onclick="turnAudio()"> <i class="fas fa-arrow-up"></i></button>
         <span></span>
     </div>
 
@@ -422,6 +215,23 @@
     <script src="main.js"></script>
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-elements">
+                <p class="footer-brand">
+                <br>
+                <h1>Astana IT University</h1>
+                </p>
 
+                <p class="names ">
+                    Baktiyar Toksanbay, Bernur Mynzhasarov, Alikhan Gibadatov
+                </p>
+                <br>
+                <p class="names ">
+                    ©2022 - Astana IT University
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
