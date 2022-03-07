@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"  > <img src="assets/Logo.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="catalog__search">
+                                <p class="fa fa-search catalog__search-icon"></p>
+                                <input type="text" class="form-control form-input catalog__search-input" placeholder="Найти...">
+                            </li>
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <div class = "box">
+                                        <h1 id="reg-head">Вход</h1>
+                                        <form>
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="log-username" placeholder="логин">
+                                                <label for="">логин</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="password" class="form-control" id="log-password" placeholder="пароль">
+                                                <label for="">пароль</label>
+                                            </div>
+                                            <a href="pages/Registration/Registration.html" id="reg-link" style="margin-left: 3%"> регистрация </a>
+                                            <div class = "reg">
+                                                <input type = "button" onClick="login()" id = "log-btn" style="margin-left: 6%" Value = "войти"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <li>
+                                <button type="button" class="btn btn-light" onclick="darkmode()">Темная тема</button>
+                            </li>
+                            <li>
+                                <button id="overlay-btn" type="button" onclick="openNav()" class="btn btn-dark">Войти</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="info-block container" id="info-block">
+        <div class="vertical-bar" id="vert-bar">
+            <ul id="myMenu">
+                <li><a class="lis" href="index.html">Главная</a></li>
+                <li><a class="lis" href="pages/catalog/catalog.html">Каталог</a></li>
+                <li><a class="lis" href="#">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="all-info" id="all-info">
+            <div class="update-block container">
+
+                    <div class="main-film container">
+
+                        <iframe id="myVideo"width="1097" height="617"
+                                src="https://www.youtube.com/embed/gCcx85zbxz4?autoplay=1&loop=1&controls=0">
+
+                        </iframe>
+                        <div class="content container">
+                            <h1>Бегущий по лезвию 2049 (2017)</h1>
+                            <p>Полицейский ищет Рика Декарда, пропавшего 30 лет назад. Красивый сиквел культового сай-фая от Дени Вильнёва</p>
+                        </div>
+
+                    </div>
+                    <div class="slider">
+                                <div class = "row container">
+                                    <div class="col-md-12">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" class="button" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  class="button" aria-label="Slide 3"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <h2 class="NameText"></h2>
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/Blade.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/OldBoy.png" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/Blade.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/OldBoy.png" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/Blade.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="single-box">
+                                                                <a href="pages/catalog/catalog.html" class="img-area">
+                                                                    <img src="./assets/OldBoy.png" alt="">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true" class="button_right" ></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"  >
+                                                <span class="carousel-control-next-icon" aria-hidden="true" class="button_left"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                <p class="navigation-text container" id="nav-text">Обновления на сайте ></p>
+                    <div class="news-list">
+
+                        <ul id="update-block__films" class="container">
+                            <p class="loading">Загружаем список фильмов...</p>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="container">
+        <div class="backtop">
+            <div class = "row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" class="button" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  class="button" aria-label="Slide 3"></button>
+                        </div>
+
+                         <div class="carousel-inner">
+                             <h2 class="NameText">ТОП ЛУЧШИХ</h2>
+                             <div class="carousel-item active">
+                                 <div class="row">
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/Blade.jpg" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Blade Runner: 2049</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/Clockwork.jpg" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Clockwork orange</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/OldBoy.png" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Oldboy</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="carousel-item">
+                                 <div class="row">
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/Blade.jpg" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Blade Runner: 2049</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/Clockwork.jpg" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Clockwork orange</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <div class="single-box">
+                                             <div class="img-area">
+                                                 <img src="./assets/OldBoy.png" alt="">
+                                             </div>
+                                             <div class="img-text">
+                                                 <h2>Oldboy</h2>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" class="button_right" ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"  >
+                            <span class="carousel-control-next-icon" aria-hidden="true" class="button_left"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="backtop.">
+
+            <ul class="news-list">
+                <h4 class="ListText">Последнее обновление на сайте</h4>
+                <li class="news-list__item ">
+                    <span class="new__date"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Stalker.jpg" class="update_img" alt="movie cover" loading="lazy">
+                        <h4 class="new__title">
+                            Сталкер (1979)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                Мистическое путешествие через Зону к комнате, где исполняются желания. Философский шедевр Андрея Тарковского
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-list__item ">
+                    <span class="new__date" ><script src="main.js"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Solaris.jpg" class="update_img" alt="movie cover" loading="lazy">
+                        <h4 class="new__title">
+                            Солярис (1972)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                На космической станции Крис встречает призрак умершей жены. Шедевр Тарковского об искушении и о сути любви
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-list__item ">
+                    <span class="new__date"><script src="main.js"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Rublev.jpg" class="update_img" alt="movie cover" loading="lazy">
+                        <h4 class="new__title">
+                            Андрей Рублев (1966)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                У иконописца экзистенциальный кризис, и он больше не может творить. Андрей Тарковский — о совести и выборе
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-list__item ">
+                    <span class="new__date"><script src="main.js"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Odissey.jpg" class="update_img" alt="movie cover">
+                        <h4 class="new__title">
+                            2001 год: Космическая одиссея (1968)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                Человек, компьютер и внеземной разум ведут опасный диалог. Грандиозная космическая притча Стэнли Кубрика
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-list__item ">
+                    <span class="new__date"><script src="main.js"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Watchmen.jpg" class="update_img" alt="movie cover">
+                        <h4 class="new__title">
+                            Хранители (2009)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                "Супергерои" распутывают заговор, пока тикают часы Судного дня. Блестящая адаптация знакового комикса Алана Мура
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-list__item ">
+                    <span class="new__date"><script src="main.js"></script></span>
+                    <div class="new__info">
+                        <img src="./assets/Memory.jpg" class="update_img" alt="movie cover">
+                        <h4 class="new__title">
+                            Воспоминания об убийстве (2003)
+                        </h4>
+                        <div class="new__description">
+                            <span>
+                                В корейском городке ищут серийного убийцу. Триллер режиссера «Паразитов», основанный на реальных событиях
+                            </span>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="backtop">
+            <div class="ListText"> <h3> Видео-обзоры </h3> </div>
+
+            <video src="assets/Tarkov.mp4" controls class="video"></video>
+
+        </div>
+    </div>
+
+    -->
+
+
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+        <span></span>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>

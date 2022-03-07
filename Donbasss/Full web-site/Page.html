@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="Page.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"  > <img src="assets/Logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="catalog__search">
+                            <p class="fa fa-search catalog__search-icon"></p>
+                            <input type="text" class="form-control form-input catalog__search-input" placeholder="Найти...">
+                        </li>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <div class = "box">
+                                    <h1 id="reg-head">Вход</h1>
+                                    <form>
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" id="log-username" placeholder="логин">
+                                            <label for="">логин</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="log-password" placeholder="пароль">
+                                            <label for="">пароль</label>
+                                        </div>
+                                        <a href="pages/Registration/Registration.html" id="reg-link" style="margin-left: 3%"> регистрация </a>
+                                        <div class = "reg">
+                                            <input type = "button" onClick="login()" id = "log-btn" style="margin-left: 6%" Value = "войти"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <button type="button" class="btn btn-light" onclick="darkmode()">Темная тема</button>
+                        </li>
+                        <li>
+                            <button id="overlay-btn" type="button" onclick="openNav()" class="btn btn-dark">Войти</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+      <section class="movie-banner">
+
+             <div class="m-banner-img">
+                 <img alt="" src="assets/OldBoy.png">
+             </div>
+
+        <div class="banner-container container">
+            <div class="title-container">
+                <div class="title-top">
+                <div class="movie-title">
+                    <h1>Олдбой</h1>
+                    <p>Герой, проведший в плену много лет, ищет причину своего заточения и жаждет мести. Шедевральная кровавая драма.</p>
+                </div>
+                <div class="more-about-movie">
+                    <span class="quality">Full HD</span>
+                    <div class="rating">
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                    </div>
+                    <span>120 мин</span>
+                </div>
+
+                <div class="language">
+                    <span>Русский</span>
+                </div>
+                </div>
+                <div class="like">
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+              </div>
+                <div class="information">
+                  <strong>О фильме</strong>
+                  <spam>Год производства: 2003</spam>
+                  <spam>Страна: Корея Южная</spam>
+                  <spam>Режиссер: Пак Чхан-ук</spam>
+                </div>
+
+                              <div class="title-bottom">
+                                  <div class="category">
+                                      <strong>Категория</strong><br/>
+                                      <a href="#">Триллер</a>,<a href="#">Детектив</a>,<a href="#">Драма</a>
+                                  </div>
+
+                              </div>
+                            </div>
+                            <div id="scroll" class="play-btn-container">
+                  <div class="play-btn">
+                      <a href="javascript:void">
+                          <i class="fas fa-play"></i>
+                      </a>
+                  </div>
+              </div>
+              <div id="play" class="play">
+   <a href="javascript:void" class="close-movie">
+       <i class="fas fa-times"></i>
+   </a>
+   <div class="play-movie">
+       <video id="m-video" controls>
+           <source src="Movie-Data/Pirates-of-the-Caribbean-Salazar's-Revenge/Movie.mp4" type="video/mp4">
+       </video>
+   </div>
+</div>
+</div>
+</section>
+    <div class="info container">
+        <div class="verticalLine">
+            <hr>
+                <strong>Описание</strong>
+                <p>1988 год. Обыкновенный и ничем непримечательный бизнесмен О Дэ-cу в день трёхлетия своей дочери по пути домой напивается, начинает хулиганить и закономерно попадает в полицейский участок. Из участка его под своё поручительство забирает друг детства. Пока тот звонит жене незадачливого пьяницы, О Дэ-су пропадает. Неизвестные похищают его и помещают в комнату без окон на 15 лет.</p>
+            </hr>
+        </div>
+    </div>
+
+    <div class="size container">
+        <iframe id="myVideo"width="1977" height="617"
+                src="https://www.youtube.com/embed/w4UUGIIZxFU?autoplay=1&loop=1&controls=0">
+
+        </iframe>
+    </div>
+
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    <span></span>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="Page.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-elements">
+                    <p class="footer-brand">
+                        <br>
+                    <h1>Astana IT University</h1>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

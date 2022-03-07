@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Registration/Registration.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <div class="container">
+    <div class="title" style="color: #EEEEEE">Регистрация</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details" id="name" style="color: #EEEEEE">Имя</span>
+            <input type="text" placeholder="Имя" >
+          </div>
+          <div class="input-box">
+            <span class="details" style="color: #EEEEEE">Логин</span>
+            <input type="text" id="username" placeholder="Логин" >
+          </div>
+          <div class="input-box">
+            <span class="details" id="email" style="color: #EEEEEE">Почта</span>
+            <input type="text" placeholder="Электронная почта" >
+          </div>
+          <div class="input-box">
+            <span class="details" id="phone" style="color: #EEEEEE">Телефон</span>
+            <input type="text" placeholder="Номер телефона" >
+          </div>
+          <div class="input-box">
+            <span class="details" style="color: #EEEEEE">Пароль</span>
+            <input type="password" id="password" placeholder="Пароль" >
+          </div>
+          <div class="input-box">
+            <span class="details" style="color: #EEEEEE">Подтвердите Пароль</span>
+            <input type="password" id="confirmpass" placeholder="Подтвердите Пароль" >
+          </div>
+        </div>
+
+        <div class="button" onclick="register()">
+          <input type="submit" id="regbtn" value="Регистрация">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="Registration.js"></script>
+</html>

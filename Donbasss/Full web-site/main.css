@@ -1,0 +1,422 @@
+html{
+    font-size: 16px;
+    font-family: Yu Gothic;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: white;
+}
+
+header{
+    /*background-color: #222222;*/
+    /*height: 10%;*/
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: #212121;
+    display:inline-block;
+
+}
+.navbar-brand{
+    width: 194px;
+    height: 60px;
+    display: flex;
+}
+
+.navbar-collapse{
+    display: flex;
+}
+.catalog__search {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.backtop{
+    background-color: #333333;
+    margin-top: 5%;
+}
+
+.img-area{
+    display: block;
+    width: 400px;
+    height: 200px;
+}
+.NameText{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 32px;
+    font-family: Yu Gothic;
+}
+.img-text {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 11px;
+    font-family: Yu Gothic 11px;
+
+
+}
+.fa-search::before{
+    color: #EEEEEE;
+}
+.button {
+    margin-bottom: 3%;
+    margin-right: 80%
+}
+.carousel-control-prev-icon{
+    margin-right: 80%;
+}
+.carousel-control-next-icon{
+    margin-left: 80%;
+}
+
+.first-block{
+    width: 48%;
+
+}
+.update-date{
+    color: #f1f1f1;
+
+}
+.update_img{
+    width: 70px;
+    height: 70px;
+}
+.update-title{
+    font-weight: bold ;
+    color: #f1f1f1;
+}
+.separator{
+    font-weight: bold ;
+    color: #f1f1f1;
+}
+.update-info{
+    color: #f1f1f1;
+}
+
+
+li {
+    list-style-type: none;
+}
+.block-header{
+    text-align: center;
+    color: #f1f1f1;
+}
+.update-list{
+    margin-right: 20px;
+}
+.navigation-text{
+    margin-top: 5%;
+    color: #000000;
+    font-size: 21px;
+
+}
+.news-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    padding: 0;
+    border-radius: 8px;
+    background-color: #0c0c0c;
+
+}
+
+.news-list__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    min-height: 64px;
+    margin-top: 3px;
+
+
+}
+.news-list__item:first-child::before{
+    position: absolute;
+    width: 4px;
+    height: 100%;
+
+    border-radius: 0 99px 99px 0;
+    background-color: rgb(32, 130, 32);
+    content: "";
+}
+.new__date {
+    padding: 0 8px 0 8px;
+    white-space: nowrap;
+    color: #f1f1f1;
+}
+.new__info {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+}
+.new__title {
+    padding: 0 8px 0 8px;
+    font-size: 18px;
+
+    width: 230px;
+}
+.new__description {
+    padding: 0 8px 0 8px;
+    height: 80%;
+    overflow: hidden;
+}
+.new__description,
+span {
+    padding: 0 8px 0 0;
+    text-overflow: ellipsis;
+}
+.new_info,
+img {
+    height: 100%;
+}
+.ListText{
+    color: #f1f1f1;
+    text-align: center;
+    padding: 8px 0 8px 0;
+
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    margin-top: 10%;
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+
+
+}
+.footer-elements{
+    color: #f1f1f1;
+    font-family: Segoe UI;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+}
+section{
+  width: 100%;
+  height: 100vh;
+  background: url('./assets/lake.png') no-repeat;
+  background-size: cover;
+}
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.footer-brand{
+    margin-top: 1%
+}
+
+.info-block{
+    color: white;
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    justify-content: space-between;
+}
+.vertical-bar {
+    background-color: white;
+}
+.all-info {
+    background-color: white;
+}
+/* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+
+#myMenu li a:hover {
+    background-color: #565656;
+}
+.info-block{
+    background-color: white;
+    font-size: 16px;
+    border: #f1f1f1 outset 1px;
+}
+.vertical-bar {
+    background-color: white;
+}
+.all-info {
+    background-color: white;
+}
+.vertical-bar{
+    width: 15%;
+    border-right: #f1f1f1 outset 1px ;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    border-radius: 10px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+/* Add some content at the bottom of the video/page */
+
+.content {
+
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 42.5%;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+#log-username {
+    width: 350px;
+}
+#log-password {
+    width: 350px;
+}
+
+.catalog__search {
+    margin-right: 15px;
+}
+.btn-dark {
+    background: linear-gradient(135deg,#505add 30%,#be40c0 55%,#fba82b 80%);
+}
+.reg {
+    color: #EEEEEE;
+    font-size: 30px;
+}
+.form-floating {
+    width: 12px;
+}
+.form-control {
+    width: 30%;
+}
+#reg-head {
+    color: #EEEEEE;
+    margin-left: 6.5%;
+}
+.overlay-container {
+    color: grey;
+}
+.dark-mode {
+    background-color: #423F3E;
+    color: white;
+}
+.dark-mode1 {
+    background-color: #2B2B2B;
+    border: #121212 outset 1px;
+    color: white;
+}
+.dark-mode2 {
+    background-color: #2B2B2B;
+    border-right: #121212 outset 1px;
+    color: white;
+}
+.dark-mode3 {
+    background-color: #2B2B2B;
+    color: white;
+}
+.dark-mode4 {
+    color:white;
+}
+.btn-light {
+    background-color: black;
+    margin-right: 15px;
+}
+.lis {
+    font-weight: bold;
+    font-size: large;
+}
+.dark-mode5 {
+    color: white;
+}
