@@ -42,7 +42,7 @@ header{
 .catalog__item {
     min-height: 300px;
     border-radius: 8px;
-    background-color: #333;
+    background-color: #0c0c0c;
     padding: 16px;
 }
 .catalog__filters-and-search {
@@ -71,9 +71,9 @@ header{
 }
 .filter-item {
     padding: 4px;
-    background: rgb(180, 180, 180);
+    background: #222222;
     border-radius: 8px;
-    color: #333;
+    color: white;
 }
 .filter-item__options {
     display: flex;
@@ -87,8 +87,8 @@ header{
 }
 .filter-item__options .btn-active {
     border-radius: 8px;
-    background: rgb(110, 110, 110);
-    color: rgb(240, 240, 240)
+    background: white;
+    color: black;
 }
 
 
@@ -97,7 +97,7 @@ header{
     display: flex;
     height: 120px;
     justify-content: space-around;
-    background: rgb(73, 73, 73);
+    background: #222222;
     border-radius: 8px;
     padding: 4px;
 }
@@ -498,6 +498,19 @@ footer{
     color: #f1f1f1;
     font-family: "Agency FB";
 }
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
 body{
   margin: 0;
   padding: 0;
@@ -548,7 +561,7 @@ section{
     color: grey;
 }
 .dark-mode {
-    background-color: #423F3E;
+    background-color: #333333;
     color: white;
 }
 .dark-mode1 {

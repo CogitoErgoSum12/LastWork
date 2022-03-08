@@ -2,235 +2,251 @@
 <html>
 <head>
     <link href="main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="body">
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"  > <img src="assets/Logo.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="catalog__search">
-                                <p class="fa fa-search catalog__search-icon"></p>
-                                <input type="text" class="form-control form-input catalog__search-input" placeholder="Найти...">
-                            </li>
-                            <div id="myNav" class="overlay">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <div class="overlay-content">
-                                    <div class = "box">
-                                        <h1 id="reg-head">Вход</h1>
-                                        <form>
-                                            <div class="form-floating mb-4">
-                                                <input type="text" class="form-control" id="log-username" placeholder="логин">
-                                                <label for="">логин</label>
-                                            </div>
-                                            <div class="form-floating">
-                                                <input type="password" class="form-control" id="log-password" placeholder="пароль">
-                                                <label for="">пароль</label>
-                                            </div>
-                                            <a href="pages/Registration/Registration.html" id="reg-link" style="margin-left: 3%"> регистрация </a>
-                                            <div class = "reg">
-                                                <input type = "button" onClick="login()" id = "log-btn" style="margin-left: 6%" Value = "войти"/>
-                                            </div>
-                                        </form>
-                                    </div>
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="assets/Logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="catalog__search">
+                            <p class="fa fa-search catalog__search-icon"></p>
+                            <input type="text" class="form-control form-input catalog__search-input"
+                                   placeholder="Найти...">
+                        </li>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <div class="box">
+                                    <h1 id="reg-head">Вход</h1>
+                                    <form>
+                                        <div class="form-floating mb-4">
+                                            <input type="text" class="form-control" id="log-username"
+                                                   placeholder="логин">
+                                            <label for="">логин</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="log-password"
+                                                   placeholder="пароль">
+                                            <label for="">пароль</label>
+                                        </div>
+                                        <a href="pages/Registration/Registration.html" id="reg-link"
+                                           style="margin-left: 3%"> регистрация </a>
+                                        <div class="reg">
+                                            <input type="button" onClick="login()" id="log-btn" style="margin-left: 6%"
+                                                   Value="войти"/>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                            <li>
-                                <button type="button" class="btn btn-light" onclick="darkmode()">Темная тема</button>
-                            </li>
-                            <li>
-                                <button id="overlay-btn" type="button" onclick="openNav()" class="btn btn-dark">Войти</button>
-                            </li>
-                        </ul>
-                    </div>
+                        </div>
+                        <li>
+                            <button type="button" class="btn btn-light">Темная тема</button>
+
+                        </li>
+                        <li>
+                            <button id="overlay-btn" type="button" onclick="openNav()" class="btn btn-dark">Войти
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-    <div class="info-block container" id="info-block">
-        <div class="vertical-bar" id="vert-bar">
-            <ul id="myMenu">
-                <li><a class="lis" href="index.html" >Главная</a></li>
-                <li><a class="lis" href="pages/catalog/catalog.html">Каталог</a></li>
-                <li><a class="lis" onclick="turnAudio()" id="downBtn">Помощь</a></li>
-            </ul>
         </div>
-        <div class="all-info" id="all-info">
-            <div class="update-block container">
+    </nav>
+</header>
 
-                    <div class="main-film container">
 
-                        <iframe id="myVideo"width="1097" height="617"
-                                src="https://www.youtube.com/embed/gCcx85zbxz4?autoplay=1&loop=1&controls=0">
+<div class="info-block container" id="info-block">
+    <div class="vertical-bar" id="vert-bar">
+        <ul id="myMenu">
+            <li><a class="lis" href="index.html">Главная</a></li>
+            <li><a class="lis" href="pages/catalog/catalog.html">Каталог</a></li>
+            <li><a class="lis" onclick="turnAudio()" id="downBtn">Помощь</a></li>
+        </ul>
+    </div>
+    <div class="all-info" id="all-info">
+        <div class="update-block container">
 
-                        </iframe>
+            <div class="main-film container">
 
-                    </div>
-                    <div class="slider container">
-                        <p style="color: #f1f1f1" class="slider__text"><strong>Каталог фильмов </strong></p>
-                                <div class = "row ">
-                                    <div class="col-md-12">
-                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                            <div class="carousel-indicators">
-                                                <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" class="button" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  class="button" aria-label="Slide 3"></button>
+                <iframe id="myVideo" width="1097" height="617"
+                        src="https://www.youtube.com/embed/gCcx85zbxz4?autoplay=1&loop=1&controls=0">
+
+                </iframe>
+
+            </div>
+            <div class="slider container">
+                <p style="color: #f1f1f1" class="slider__text"><strong>Каталог фильмов </strong></p>
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                        class="active" class="button" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                        class="button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                        class="button" aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <h2 class="NameText"></h2>
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page2.html" class="img-area">
+                                                    <img src="./assets/Blade.jpg" alt="">
+                                                </a>
+
                                             </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page3.html" class="img-area">
+                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                </a>
 
-                                            <div class="carousel-inner">
-                                                <h2 class="NameText"></h2>
-                                                <div class="carousel-item active">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page2.html" class="img-area">
-                                                                    <img src="./assets/Blade.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page3.html" class="img-area">
-                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page.html" class="img-area">
-                                                                    <img src="./assets/OldBoy.png" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page2.html" class="img-area">
-                                                                    <img src="./assets/Blade.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page3.html" class="img-area">
-                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page.html" class="img-area">
-                                                                    <img src="./assets/OldBoy.png" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page2.html" class="img-area">
-                                                                    <img src="./assets/Blade.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page3.html" class="img-area">
-                                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="single-box">
-                                                                <a href="Page.html" class="img-area">
-                                                                    <img src="./assets/OldBoy.png" alt="">
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page.html" class="img-area">
+                                                    <img src="./assets/OldBoy.png" alt="">
+                                                </a>
 
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true" class="button_right" ></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"  >
-                                                <span class="carousel-control-next-icon" aria-hidden="true" class="button_left"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                    </div>
-                        <div class="news-list-box">
-                            <p class="navigation-text container" style="color: #f1f1f1" ><strong>Обновления на сайте </strong></p>
-                            <div class="news-list">
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page2.html" class="img-area">
+                                                    <img src="./assets/Blade.jpg" alt="">
+                                                </a>
 
-                                <ul id="update-block__films" class="container">
-                                    <p class="loading">Загружаем список фильмов...</p>
-                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page3.html" class="img-area">
+                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page.html" class="img-area">
+                                                    <img src="./assets/OldBoy.png" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page2.html" class="img-area">
+                                                    <img src="./assets/Blade.jpg" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page3.html" class="img-area">
+                                                    <img src="./assets/StalkerFullHd.jpg" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="single-box">
+                                                <a href="Page.html" class="img-area">
+                                                    <img src="./assets/OldBoy.png" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" class="button_right"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" class="button_left"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
                         </div>
-                    <br>
+                    </div>
+                </div>
             </div>
+            <div class="news-list-box">
+                <p class="navigation-text container" style="color: #f1f1f1"><strong>Обновления на сайте </strong></p>
+                <div class="news-list">
+
+                    <ul id="update-block__films" class="container">
+                        <p class="loading">Загружаем список фильмов...</p>
+                    </ul>
+                </div>
+            </div>
+            <br>
         </div>
     </div>
+</div>
 
 
-
-    <button id="topBtn" onclick="turnAudio()"> <i class="fas fa-arrow-up"></i></button>
-        <span></span>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+<button id="topBtn" onclick="turnAudio()"><i class="fas fa-arrow-up"></i></button>
+<span></span>
+</div>
 
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-elements">
-                <p class="footer-brand">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-elements">
+            <p class="footer-brand">
                 <br>
-                <h1>Astana IT University</h1>
-                </p>
+            <h1>Astana IT University</h1>
+            </p>
 
-                <p class="names ">
-                    Baktiyar Toksanbay, Bernur Mynzhasarov, Alikhan Gibadatov
-                </p>
-                <br>
-                <p class="names ">
-                    ©2022 - Astana IT University
-                </p>
-            </div>
+            <p class="names ">
+                Baktiyar Toksanbay, Bernur Mynzhasarov, Alikhan Gibadatov
+            </p>
+            <br>
+            <p class="names ">
+                ©2022 - Astana IT University
+            </p>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>

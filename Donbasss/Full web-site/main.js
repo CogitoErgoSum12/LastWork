@@ -8,7 +8,7 @@ $(function(){
   setVideoCenter();
   $(window).resize(setVideoCenter);
 });
-
+//-Alikhan
 $(document).ready(function(){
 
   $(window).scroll(function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
     $('html ,body').animate({scrollTop : 0},0);
   });
   $("#downBtn").click(function(){
-    $('html ,body').animate({scrollTop : 1000},0);
+    $('html ,body').animate({scrollTop : 1200},0);
   });
   renderUpdateBlock();
 });
@@ -59,7 +59,7 @@ const renderUpdateBlock = async () => {
     cardListWrapper.innerHTML = 'К сожалению, произошла ошибка при попытке получить список обновлений'
   }
 }
-
+//-Bernur
 /* Open */
 function openNav() {
   document.getElementById("myNav").style.display = "block";
@@ -85,9 +85,8 @@ logusername.oninput = function() {
     }
   }
 }
-
-
-function darkmode() {
+//-Bernur
+/*function darkmode() {
   let element = document.body;
   //element = document.getElementsByTagName("body")
   let element__info_block = document.getElementById("info-block");
@@ -103,8 +102,8 @@ function darkmode() {
   elements_a.classList.toggle("dark-mode4");
   element__nav_text.classList.toggle("dark-mode5");
   element_vertical_bar__text.classList.toggle("dark-mode_lis");
-}
-
+}*/
+//-Bernur
 
 let audio = new Audio("clickUp.mp3");
 
@@ -112,5 +111,26 @@ audio.oncanplaythrough = turnAudio();
 function turnAudio(){
   audio.play();
 }
+/*element.classList.toggle("dark-mode");
+element__info_block.classList.toggle("dark-mode1");
+element__vert_bar.classList.toggle("dark-mode2");
+element__all_info.classList.toggle("dark-mode3");
+elements_a.classList.toggle("dark-mode4");
+element__nav_text.classList.toggle("dark-mode5");
+element_vertical_bar__text.classList.toggle("dark-mode_lis");*/
+let darkmode_body = $(".body");
+let element__info_block = $(".info-block");
+let element__vert_bar = $(".vertical-bar");
+let element__all_info = $(".all-info");
 
 
+
+let button = $("button");
+
+button.on("click", function (){
+  darkmode_body.toggleClass("dark-mode");
+  element__info_block.toggleClass("dark-mode1");
+
+  element__all_info.toggleClass("dark-mode3");
+  element__vert_bar.toggleClass("dark_vertical_bar");
+})
