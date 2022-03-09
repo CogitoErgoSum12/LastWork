@@ -125,7 +125,7 @@ let element__all_info = $(".all-info");
 
 
 
-let button = $("button");
+let button = $(".btn-light");
 
 button.on("click", function (){
   darkmode_body.toggleClass("dark-mode");
